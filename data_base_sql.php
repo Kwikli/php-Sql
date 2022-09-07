@@ -22,20 +22,20 @@ function dbCheckError($query){
 function insert($table, $params){
     global $pdo;
     $i = 0;
-    $coll = '';
-    $mask = '';
+    $names = '';
+    $valuess = '';
     
     foreach ($params as $key => $value) {
         if ($i === 0){
-            $coll = $coll . "$key";
-            $mask = $mask ."'" . "$value"."'";
+            $names = $names . "$key";
+            $valuess = $valuess ."'" . "$value"."'";
         }else {
-            $coll = $coll . ", $key";
-            $mask = $mask .", '" . "$value" . "'";
+            $names = $names . ", $key";
+            $valuess = $valuess .", '" . "$value" . "'";
         }
         $i++;
     }
-    $sql = "INSERT INTO $table ($coll) VALUES ($mask)";
+    $sql = "INSERT INTO $table ($names) VALUES ($valuess)";
 
     $query = $pdo->prepare($sql);
     $query->execute($params);
