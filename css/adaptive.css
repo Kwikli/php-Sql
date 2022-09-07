@@ -1,0 +1,5 @@
+@media screen and (max-width: 1150px) {
+    .point, .shar, .sms_love{
+        display: none;
+    }
+}

@@ -1,0 +1,73 @@
+.col a {
+    display: block;
+    text-align: left;
+    margin: 1em;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color:#fee3b3;
+    flex:  0 0 auto;
+}
+.errMsg{
+    font-size: 15px;
+    color: #ff0000;
+    margin-left: 8px;
+}
+.successMsg{
+    font-size: 15px;
+    color: #00ff00;
+    margin-left: 8px;
+}
+.sub_email{
+    margin: 1.3em 0 0.1em 0 ;
+    background-color:#ffffff;
+    border-radius: 9px;
+    height: 3em;
+    display:inline-flex;
+    justify-content:space-between;
+    width: 100%;
+}
+.sub_email input{
+    outline: none;
+    border: none;
+    height: 100%;
+    border-radius: 12px;
+    padding-left: 10px;
+    width: 72%;
+}
+.sub_email button, .sub_btn{
+    border: none;
+    background-color:#153a4b;
+    color: #ffffff;
+    height: 100%;
+    border-radius: 9px;
+    padding: 0 1.3em;
+    transition: 0.1s;
+    margin-left: -14px;
+}
+.sub_btn:hover{
+    background-color: #032736;
+}
+.sub_btn:active{
+    background-color: #12313f;
+}
+.row hr{
+    width: 100%;
+    border-top: 1px solid #0F222B;
+}
+.footer_text{
+    margin: 1.5em 0 1em 0;
+}
+.links_soc{
+    display:flex;
+    justify-content: space-between;
+}
+.links_soc a {
+    margin-left: 0;
+}
+.row .col a:hover{
+    color: #94650e;
+}
