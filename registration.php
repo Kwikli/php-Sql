@@ -24,7 +24,8 @@
     <main>
         <form class="container_reg reg_form" method="POST" action="">
             <div class="reg_form_Text">Registation form<br></div> 
-            Login<br>
+            <div class="reg_content">
+                Login<br>
             <div class="input_reg"><input type="text" value="<?=$login?>" name="login" class="inpt_reg" placeholder="Type your login..."></div>
             Email<br>
             <div class="input_reg"><input type="email"  value="<?=$email?>" name="email" class="inpt_reg" placeholder="Type your email..." autocomplete="on"></div>
@@ -34,6 +35,8 @@
             <div class="input_reg"><input type="password" name="reg_passwrd2" class="inpt_reg" placeholder="Repeat the password..."></div>
             <div class="errmsg"><?=$reg_errMsg?></div>
             <button type="submit" class="reg_btn">Submit</button>
+            </div>
+            
         </form>
     </main>
 <?php 

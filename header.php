@@ -13,7 +13,7 @@
                     <a href="" class="links">About</a>
                     <a href="" class="links">Services</a>
                     <a href="" class="links">Prices</a>
-                    <a href="#" class="links hvr-buzz-out"> <img src="images/notification.svg" class = "hvr-buzz-out"></a>
+                    <a href="#" class="links "> <img src="images/notification.svg" class = "hvr-buzz-out"></a>
 
                         <?php if (isset($_SESSION['user_id'])): ?>
                     <a href="registration.php" target="_blank" style="margin-left:0;"><img src="images/user4.svg" class="user"></a>
