@@ -13,13 +13,14 @@
                     <a href="" class="links">About</a>
                     <a href="" class="links">Services</a>
                     <a href="" class="links">Prices</a>
-                    <a href="#" class="links"> <img src="images/notification.svg" class="notification"></a>
+                    <a href="#" class="links hvr-buzz-out"> <img src="images/notification.svg" class = "hvr-buzz-out"></a>
+
                         <?php if (isset($_SESSION['user_id'])): ?>
-                            <a href="registration.php" target="_blank" style="margin-left:0;"><img src="images/user4.svg" class="user"></a>
-                            <a href="login.php"><img src="images/user_3sv.svg" class="user_exit"></a>
-                            <a href="registration.php" target="_blank" style="margin-left:0;"><?php echo $_SESSION['user_login'];?></a>
+                    <a href="registration.php" target="_blank" style="margin-left:0;"><img src="images/user4.svg" class="user"></a>
+                    <a href="login.php"><img src="images/user_3sv.svg" class="user_exit"></a>
+                    <a href="registration.php" target="_blank" style="margin-left:0;"><?php echo $_SESSION['user_login'];?></a>
                         <?php else:?>    
-                            <a href="registration.php" target="_blank" class="links"> <img src="images/user_ghost.svg" class="user"></a>
+                    <a href="registration.php" target="_blank" class="links"> <img src="images/user_ghost.svg" class="user"></a>
                         <?php endif?>
                 </div>
             </div>
